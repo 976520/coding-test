@@ -1,16 +1,48 @@
+const sexyButtonContainer = document.getElementById('sexy-buttons');
 
-const button1 = document.getElementsByClassName("first-button");
+const firstButton = document.getElementById('first-button');
+const secondButton = document.getElementById('second-button');
+const thirdButton = document.getElementById('third-button');
+const fourthButton = document.getElementById('fourth-button');
+const fifthButton = document.getElementById('fifth-button');
 
-
-function buttonMouseEnter() {
-    this.style.opacity = 0.1;
-    console.log("enter");
+function chunChunHeeGamSo(sexyButton){
+    sexyButton.style.opacity = 0.6;
+    
 }
 
-function buttonMouseLeave() {
-    this.style.opacity = 1;
-    console.log("leave");
+function bbaLuGaeJungGa(sexyButton){
+    sexyButton.style.opacity = 1;
+    
 }
 
-button1.addEventListener("mouseover", buttonMouseEnter);
-button1.addEventListener("mouseout", buttonMouseLeave);
+function catchMouseOver(event) {
+    if(event.target.id == "first-button") {
+        chunChunHeeGamSo(firstButton);
+    } else if (event.target.id == "second-button") {
+        chunChunHeeGamSo(secondButton);
+    } else if (event.target.id == "third-button") {
+        chunChunHeeGamSo(thirdButton);
+    } else if (event.target.id == "fourth-button") {
+        chunChunHeeGamSo(fourthButton);
+    } else if (event.target.id == "fifth-button") {
+        chunChunHeeGamSo(fifthButton);
+    }
+}
+d
+function catchMouseOut(event) {
+    if(event.target.id == "first-button") {
+        bbaLuGaeJungGa(firstButton);
+    } else if (event.target.id == "second-button") {
+        bbaLuGaeJungGa(secondButton);
+    } else if (event.target.id == "third-button") {
+        bbaLuGaeJungGa(thirdButton);
+    } else if (event.target.id == "fourth-button") {
+        bbaLuGaeJungGa(fourthButton);
+    } else if (event.target.id == "fifth-button") {
+        bbaLuGaeJungGa(fifthButton);
+    }
+}
+
+sexyButtonContainer.addEventListener('mouseover', catchMouseOver);
+sexyButtonContainer.addEventListener('mouseout', catchMouseOut);
