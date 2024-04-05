@@ -29,7 +29,7 @@ function catchMouseOver(event) {
         chunChunHeeGamSo(fifthButton);
     }
 }
-d
+
 function catchMouseOut(event) {
     if(event.target.id == "first-button") {
         bbaLuGaeJungGa(firstButton);

@@ -7,7 +7,7 @@ const secondPyungGa = document.getElementById('second-pyung-ga');
 const gyoulGwaBalPyo = document.getElementById('gyoul-gwa-bal-pyo');
 
 function selectedButton(button) {
-    button.style.fontWeight = 'bold';
+    button.style.fontWeight = '600';
     button.style.opacity = 1;
 }
 

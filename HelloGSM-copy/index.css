@@ -172,7 +172,7 @@ footer {
     height: 100px;
 
     position: absolute;
-    top: 150%;
+    top: 145%;
     left: 46.5%;
     transform: translate(-7%, -150%);
     font-size: 160%; 
@@ -193,14 +193,10 @@ footer {
 }
 
 .dong-gu-ra-mi {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-
-    background-color: yellow;
-    
-    
-
+    background-image: linear-gradient(200deg, #fcffad 15%,#dee449 25%, #305f02 90%);
 
     position: absolute;
     top: 70%;
@@ -213,7 +209,7 @@ footer {
     width: 280px;
     height: 280px;
     border-radius: 50%;
-    background-color: skyblue;
+    background-image: linear-gradient(200deg, #85C7FF 5%,#83C4FF 25%, #1F2E48 90%);
 
     position: absolute;
     top: 125%;
@@ -226,7 +222,7 @@ footer {
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    background-color: skyblue;
+    background-image: linear-gradient(200deg, #8DC7F5 5%,#4A6BB2 25%, #1D2947 90%);
 
     position: absolute;
     top: 130%;
@@ -270,7 +266,6 @@ footer {
     height: 250px;
     border-radius: 50%;
     background-image: linear-gradient(200deg, #fcffad 15%,#dee449 25%, #305f02 90%);
-
 
     position: absolute;
     top: 57%;
@@ -456,6 +451,8 @@ footer {
 
     top: 30px;
 
+    font-size: 16px;
+
     display: flex;
     justify-content: space-around;
 
@@ -470,14 +467,13 @@ footer {
     cursor: pointer;
     user-select: none;
     z-index: 3;
-
     font-weight: 200;
     opacity: 0.5;
     
 }
 
 #won-seo-jak-seong{
-    font-weight: bold;
+    font-weight: 600;
     opacity: 1;
 }
 
