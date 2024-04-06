@@ -3,6 +3,8 @@ body {
     background-color:  #0F0921;
     overflow-y: scroll;
     overflow-x: hidden;
+
+    
 }
 
 html, body {
@@ -58,10 +60,6 @@ ul a {
     text-decoration-line: none;
 }
 
-span {
-    color: white;
-}
-
 a {
     color: white;
     text-decoration-line: none;
@@ -75,19 +73,26 @@ li {
     min-height: 100%;
     position: relative;
     padding-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 
 .lnb {
     color: white;
     position: absolute; 
-    display: inline-block; 
-    right: 250px; 
+    display: flex; 
+    
+
+    border: 1px solid red;
+    justify-content: space-between;
 
     position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(7%, 150%);
+    right: 200px; 
+    top: 30px;
+    
+    width: 420px;
     
 }
 
@@ -95,23 +100,73 @@ footer {
     position: absolute;
     top: 330%;
 
-    /* 하단고정 어케하노 */
+    margin-top: auto;
 
     left: 0%;
 
-    padding-left: 650px; /*여백의미*/
-    padding-bottom: 150px;
+    padding-left: 650px;
+    padding-bottom: 130px;
     padding-top: 50px;
     padding-right: 160px;
     background-color: #0F1B2E;
-}
 
-.footer.li{
-    line-height: 300%;
+    text-align: right;
 }
 
 
 .footer-address {
-    color: gray;
+    color: gainsboro;
     font-size: 85%;
 }
+
+
+#footer-nav{
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: bold;
+
+    right: 2200%;
+    width: 750px;
+    height: 30px;
+}
+
+#footer-nav a{
+    font-weight: 600px;
+}
+
+.copyright {
+    color: white;
+}
+
+#header-nav {
+    text-align: right;
+    border: 1px solid yellow;
+
+    height: 70px;
+}
+
+#nav-dot-container {
+    display: flex;
+    border: 1px solid red;
+
+    position: absolute;
+    right: 200px; 
+    top: 60px;
+    
+    height: 10px;
+    width: 420px;
+}
+
+#nav-dot {
+    background-color: rgb(136, 255, 9);
+
+    height: 8px;
+    width: 8px;
+
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+

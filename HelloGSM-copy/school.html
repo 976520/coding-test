@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>학교소개 | HelloGSM</title>
-        <link rel="stylesheet" href="school.css">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="school.css">
         <link rel="javascript" href="index.js">
     </head>
     <body font-family="Pret">
@@ -15,12 +15,15 @@
                 </h1>
                 
                 <nav style="text-align:right">
-                    <ul class = "lnb" >
-                        <li><a href="home.html" >홈으로</a></li>
-                        <li><a href="school.html"><b>학교소개</b></a></li>
-                        <li><a href="faq.html">자주 묻는 질문</a></li>
-                        <li><a href="about.html">팀소개</a></li>
-                    </ul>
+                    <div class = "lnb">
+                        <a id="home" href="home.html" >홈으로</a>
+                        <a id="school" href="school.html"><b>학교소개</b></a>
+                        <a id="faq" href="faq.html">자주 묻는 질문</a>
+                        <a id="about" href="about.html">팀소개</a>
+                    </div>
+                    <div id="nav-dot-container">
+                        <div id="nav-dot"></div>
+                    </div>
                 </nav>
                 
             </header>
@@ -40,7 +43,9 @@
 
                 <div class = "dong-gu-ra-mi-8"></div>
 
-                
+                <div class = "dong-gu-ra-mi-13"></div>
+
+                <div class = "dong-gu-ra-mi-14"></div>
                 
                 <div class = "school-video-first">
                     <iframe 
@@ -72,35 +77,139 @@
                         <h1>
                             MOU 기업
                         </h1>
+                        <div class = "first-line">
+                            <div class = "square">
+                                <img src="img/Hancom.jpg" width="55%" height="60%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/GSTEC.jpg" width="45%" height="55%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/AICA.jpg" width="80%" height="30%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/MIDAS.jpg" width="50%" height="50%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/GJKorcham.jpg" width="80%" height="35%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/Mindlogic.jpg" width="70%" height="60%">
+                            </div>
+                        </div>
+                        <div class = "second-line">
+                            <div class = "square">
+                                <img src="img/RFA.jpg" width="40%" height="50%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/Payhere.png" width="60%" height="60%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/Doomoolmori.png" width="80%" height="40%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/Gameduo.jpg" width="80%" height="60%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/Clika.jpg" width="70%" height="60%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/Zetabank.jpg" width="80%" height="40%">
+                            </div>
+                        </div>
+                        <div class = "third-line">
+                            <div class = "square">
+                                <img src="img/Meimpact.jpg" width="75%" height="60%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/Nuua.jpg" width="60%" height="60%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/Aurender.jpg" width="80%" height="50%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/Wiseitech.jpg" width="80%" height="50%">
+                            </div>
+                            <div class = "square">
+                                <img src="img/Morrowbogi.jpg" width="80%" height="50%">
+                            </div>
+                        </div>
                     </div>
     
                     <div class = "chi-up-leaul">
-                        <h2>
+                        <h2 class = "chi-up-leaul-title">
                             취업률
                         </h2>
+                        <div class = "chi-up-leaul-subtitle-container">
+                            <div class = "chi-up-leaul-subtitle">
+                                취업
+                            </div>
+                            <div class = "tiny-square"></div>
+                        </div>
+
+                        <div class="line2"></div>
+                        <div id="graph-container">
+                            <div id="container-2020">
+                                <div id="percent-2020">82%</div>
+                                <div id="graph-2020"></div>
+                                <div class="graph-gray-2020"></div>
+                                <div class="dot"></div>
+                                <p class="year" id="year-2020">2020년</p>
+                            </div>
+                            <div id="container-2021">
+                                <div id="percent-2021">87%</div>
+                                <div id="graph-2021"></div>
+                                <div class="graph-gray-2021"></div>
+                                <div class="dot"></div>
+                                <p class="year" id="year-2021">2021년</p>
+                            </div>
+                            <div id="container-2022">
+                                <div id="percent-2022">81%</div>
+                                <div id="graph-2022"></div>
+                                <div class="graph-gray-2022"></div>
+                                <div class="dot"></div>
+                                <p class="year" id="year-2022">2022년</p>
+                            </div>
+                            <div id="container-2023">
+                                <div id="percent-2023">79%</div>
+                                <div id="graph-2023"></div>
+                                <div class="graph-gray-2023"></div>
+                                <div class="dot"></div>
+                                <p class="year" id="year-2023">2023년</p>
+                            </div>
+                            
+                        </div>
+                        <div id="text-container">
+                            <div id="sexy-title">2020년 취업자 수</div>
+                            <div id="sexy-number">59</div>
+                        </div>
+                        
                     </div>
+                    <script src="graph.js"></script>
+
             </section>
             <footer>
-                <p style="text-align:right">
-                    <span>
-                        ©2023 Copyright 광주소프트웨어마이스터고등학교 ALL RIGHTS RESERVED.
-                    </span>
-                </p>
-                <nav style="text-align:right">
-                    <ul class = "footer-nav">
-                        <span><br></span>
-                        <li><a href="https://official.hellogsm.kr/policy/privacy">개인정보처리방침</a></li>
-                        <li><a href="https://official.hellogsm.kr/policy/cctv">영상정보처리기기 운영ㆍ관리 방침</a></li>
-                        <li><a href="https://official.hellogsm.kr/policy/copyright">저작권신고 및 보호규정</a></li>
-                        <li><a href="https://official.hellogsm.kr/about/location">찾아오시는 길</a></li>
-                    </ul>  
-                </nav>
-                <p class = "footer-address" style="text-align:right">
-                    <span><br><br>우) 62423 광주광역시 광산구 상무대로 312 <br> 교무실 062)949-6800(08:30~16:30) 행정실 062)949-6806(08:30~16:30)<br>팩스 062)941-7545 당직실 062)949-6899(평일야간, 휴일)</span>
-                    
-                </p>
-        </footer>
+                <div id = "footer-container">
+                    <p class="copyright">
+                        <span>
+                            ©2023 Copyright 광주소프트웨어마이스터고등학교 ALL RIGHTS RESERVED.
+                        </span>
+                    </p>
+                    <nav>
+                        <div id = "footer-nav">
+                            <li><a href="https://official.hellogsm.kr/policy/privacy">개인정보처리방침</a></li>
+                            <li><a href="https://official.hellogsm.kr/policy/cctv">영상정보처리기기 운영ㆍ관리 방침</a></li>
+                            <li><a href="https://official.hellogsm.kr/policy/copyright">저작권신고 및 보호규정</a></li>
+                            <li><a href="https://official.hellogsm.kr/about/location">찾아오시는 길</a></li>
+                        </div>  
+                    </nav>
+                    <p class="footer-address">
+                        <span><br>우) 62423 광주광역시 광산구 상무대로 312 <br> 교무실 062)949-6800(08:30~16:30) 행정실 062)949-6806(08:30~16:30)<br>팩스 062)941-7545 당직실 062)949-6899(평일야간, 휴일))</span>
+                    </p>
+                </div>
+            </footer>
                 
         </div>
     </body>
+    <script src="school.js"></script>
 </html>

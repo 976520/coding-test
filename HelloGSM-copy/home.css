@@ -121,7 +121,7 @@
     font-size: 120%;
 
     position: absolute;
-    top: 105%;
+    top: 100%;
     left: 24%;
     transform: translate(-50%, -50%);
 
@@ -207,7 +207,6 @@
 
 }
 
-
 #ji-gum-buttons {
     z-index: -1;
     position: absolute;
@@ -220,7 +219,6 @@
 
     display: flex;
     justify-content: space-around;
-
 
 }
 
@@ -316,6 +314,7 @@
     user-select: none;
 }
 
-
-
-
+#nav-dot {
+    
+    left: 20px;
+}

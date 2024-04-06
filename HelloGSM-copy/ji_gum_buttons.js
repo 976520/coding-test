@@ -16,7 +16,7 @@ function unselectedButton(button) {
     button.style.opacity = 0.5;
 }
 
-function catchClick(event) { 
+function catchButtonClick(event) { 
     if (event.target.tagName !== 'H1') {
         return; 
     } else {
@@ -62,4 +62,4 @@ function catchClick(event) {
     }
 }
 
-jiGumButtonContainer.addEventListener('click', catchClick);
+jiGumButtonContainer.addEventListener('click', catchButtonClick);
