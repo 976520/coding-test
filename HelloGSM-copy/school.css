@@ -1,0 +1,110 @@
+
+.school-name {
+    color: white;
+
+    width: 500px;
+    height: 100px;
+
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+
+    font-size: 160%; 
+}
+
+.school-video-first {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-48%, -52%);
+}
+
+.school-video-second {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-52%, -52%);
+}
+
+.homepage-button {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 17px 100px;
+
+    font-size: 130%;
+    cursor: pointer;
+
+    border-radius: 10px;
+}
+
+.MOU-gi-up {
+    color: white;
+
+    width: 250px;
+    height: 100px;
+
+    position: absolute;
+    top: 145%;
+    left: 46.5%;
+    transform: translate(-7%, -150%);
+    font-size: 160%; 
+
+}
+
+.chi-up-leaul {
+    color: white;
+
+    width: 250px;
+    height: 100px;
+
+    position: absolute;
+    top: 227%;
+    left: 51%;
+    transform: translate(-20%, -100%);
+    font-size: 160%; 
+}
+
+.dong-gu-ra-mi {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: linear-gradient(200deg, #fcffad 15%,#dee449 25%, #305f02 90%);
+
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+
+.dong-gu-ra-mi-2 {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-image: linear-gradient(200deg, #85C7FF 5%,#83C4FF 25%, #1F2E48 90%);
+
+    position: absolute;
+    top: 125%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+
+.dong-gu-ra-mi-3 {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: linear-gradient(200deg, #8DC7F5 5%,#4A6BB2 25%, #1D2947 90%);
+
+    position: absolute;
+    top: 130%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
