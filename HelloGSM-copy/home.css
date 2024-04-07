@@ -14,6 +14,7 @@
     height: 900px;
     border-radius: 50%;
     background-image: linear-gradient(200deg, #8DC7F5 5%,#4A6BB2 25%, #1D2947 90%);
+    z-index: 0;
 
     position: absolute;
     top: 500px;
@@ -51,6 +52,9 @@
     height: 100px;
     border-radius: 50%;
     background-color: skyblue;
+    
+    z-index: 1;
+    box-shadow: 5px 5px 20px;
 
     position: absolute;
     top: 300%;  
@@ -135,7 +139,8 @@
     color: black;
     border: none;
     padding: 15px 20px;
-    font-size: 120%;
+    font-size: 110%;
+    font-weight: 600;
     cursor: pointer;
     border-radius: 10px;
     position: absolute;
@@ -215,7 +220,7 @@
 
     top: 30px;
 
-    font-size: 16px;
+    font-size: 19px;
 
     display: flex;
     justify-content: space-around;
@@ -297,13 +302,15 @@
     top: 460px;
     left: 200px;
     text-align: center;
+    justify-content: center;
     border:1px solid lightgray;
     display: flex;
     flex-direction: column;
     align-content: stretch;
 
-    font-size: 100%;
-
+    font-size: 115%;
+    font-weight: 100;
+    opacity: 80%;
     cursor: pointer;
     border-radius: 20px;
     position: absolute;
@@ -316,5 +323,5 @@
 
 #nav-dot {
     
-    left: 20px;
+    left: 17px;
 }

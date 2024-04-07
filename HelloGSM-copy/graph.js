@@ -24,6 +24,8 @@ const year2023 = document.getElementById('year-2023');
 const sexyTitle = document.getElementById('sexy-title');
 const sexyNumber = document.getElementById('sexy-number');
 
+const timeDelay = 800;
+let lastClickTime = 0;
 const index = 0;
 selectedGraph(index);
 
@@ -38,11 +40,11 @@ function counting(element, value, unit) {
 
     const timer = setInterval(function() {
         const elapsed = performance.now() - start;
-        i = easeOut(elapsed, value, 2000);
-        element.innerText = Math.round(i) + unit; //반올림 + 단위
+        i = easeOut(elapsed, value, timeDelay+200);
+        element.innerText = Math.round(i+1) + unit; //반올림 + 단위
         i = i + 1;
         delay = delay * 10;
-        if (i > value) {
+        if (i >= value) {
           clearInterval(timer); //정지
         }
     }, delay);
@@ -55,11 +57,11 @@ function countingHeight(element, value, unit) {
 
     const timer = setInterval(function() {
         const elapsed = performance.now() - start;
-        j = easeOut(elapsed, value, 2000);
-        element.style.height = Math.round(j) + unit; //반올림 + 단위
+        j = easeOut(elapsed, value, timeDelay+200);
+        element.style.height = Math.round(j+1) + unit; //반올림 + 단위
         j = j + 1;
         delay = delay * 10;
-        if (j > value) {
+        if (j >= value) {
           clearInterval(timer); //정지
         }
     }, delay);
@@ -67,21 +69,21 @@ function countingHeight(element, value, unit) {
 }
 
 function countingOpacity(element, value, unit) {
-    let j = 0;
+    let k = 0;
     let delay = 10;
     const start = performance.now();
 
     const timerOpacity = setInterval(function() {
         const elapsed = performance.now() - start;
-        j = easeOut(elapsed, value, 200);
-        element.style.opacity = Math.round(j) + unit; //반올림 + 단위
-        j = j + 1;
+        k = easeOut(elapsed, value, 200);
+        element.style.opacity = Math.round(k) + unit; //반올림 + 단위
+        k = k + 1;
         delay = delay * 10;
-        if (j > value) {
+        if (k >= value) {
           clearInterval(timerOpacity); //정지
         }
     }, delay);
-    j = 0;
+    k = 0;
 }
 
 
@@ -177,24 +179,52 @@ function unselectedGraph(index) {
     }
 }
 
-function catch2020Click(index){
+function catch2020Click(container2020, index) {
+    const currentTime = new Date().getTime();
+    const timeDiff = currentTime - lastClickTime;
+    if (timeDiff < timeDelay) {
+        container2020.preventDefault();
+        return;
+    }
     index = 0;
     selectedGraph(0);
-    
+    lastClickTime = currentTime;
 }
+
 function catch2021Click(index){
+    const currentTime = new Date().getTime();
+    const timeDiff = currentTime - lastClickTime;
+    if (timeDiff < timeDelay) {
+        container2021.preventDefault();
+        return;
+    }
     index = 1;
     selectedGraph(1);
-    
+    lastClickTime = currentTime;
 }
 function catch2022Click(index){
+    const currentTime = new Date().getTime();
+    const timeDiff = currentTime - lastClickTime;
+    if (timeDiff < timeDelay) {
+        container2022.preventDefault();
+        return;
+    }
     index = 2;
     selectedGraph(2);
+    lastClickTime = currentTime;
     
 }
 function catch2023Click(index){
+    const currentTime = new Date().getTime();
+    const timeDiff = currentTime - lastClickTime;
+    if (timeDiff < timeDelay) {
+        container2023.preventDefault();
+        return;
+    }
     index = 3;
     selectedGraph(3);
+    lastClickTime = currentTime;
+    
     
 }
 
@@ -202,3 +232,8 @@ container2020.addEventListener('click', catch2020Click);
 container2021.addEventListener('click', catch2021Click);
 container2022.addEventListener('click', catch2022Click);
 container2023.addEventListener('click', catch2023Click);
+
+
+
+
+

@@ -10,15 +10,15 @@ function mouseLeave() {
 }
 
 function schoolMouseOver() {
-    navDot.style.transform = `translateX(106px)`;
+    navDot.style.transform = `translateX(112px)`;
 }
 
 function faqMouseOver() {
-    navDot.style.transform = `translateX(245px)`;
+    navDot.style.transform = `translateX(249px)`;
 }
 
 function aboutMouseOver() {
-    navDot.style.transform = `translateX(372px)`;
+    navDot.style.transform = `translateX(379px)`;
 }
 
 

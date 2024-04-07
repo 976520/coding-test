@@ -10,15 +10,15 @@ function mouseLeave() {
 }
 
 function homeMouseOver() {
-    navDot.style.transform = `translateX(-112px)`;
+    navDot.style.transform = `translateX(-379px)`;
+}
+
+function schoolMouseOver() {
+    navDot.style.transform = `translateX(-267px)`;
 }
 
 function faqMouseOver() {
-    navDot.style.transform = `translateX(138px)`;
-}
-
-function aboutMouseOver() {
-    navDot.style.transform = `translateX(267px)`;
+    navDot.style.transform = `translateX(-130px)`;
 }
 
 
@@ -26,8 +26,8 @@ function aboutMouseOver() {
 home.addEventListener('mouseover', homeMouseOver);
 home.addEventListener('mouseleave', mouseLeave);
 
-faq.addEventListener('mouseover', faqMouseOver);
-faq.addEventListener('mouseleave', mouseLeave);
+school.addEventListener('mouseover', schoolMouseOver);
+school.addEventListener('mouseleave', mouseLeave);
 
-about.addEventListener('mouseover', aboutMouseOver);
-about.addEventListener('mouseleave', mouseLeave);
+faq.addEventListener('mouseover', faqMouseOver); // mouse
+faq.addEventListener('mouseleave', mouseLeave);
