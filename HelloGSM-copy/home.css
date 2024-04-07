@@ -10,15 +10,15 @@
     transform: translate(-50%, -50%);
 }
 .dong-gu-ra-mi-5 {
-    width: 900px;
-    height: 900px;
+    width: 1000px;
+    height: 1000px;
     border-radius: 50%;
-    background-image: linear-gradient(200deg, #8DC7F5 5%,#4A6BB2 25%, #1D2947 90%);
+    background-image: linear-gradient(200deg, rgb(123, 231, 255) 14%, rgb(50, 144, 255) 30%, rgba(0, 33, 65, 0.63) 90%);
     z-index: 0;
 
     position: absolute;
     top: 500px;
-    left: 1000px;
+    left: 1050px;
 
     
 }
@@ -30,7 +30,7 @@
     background-image: linear-gradient(200deg, #FAFEB4 10%,#E0E86C 25%, #8CAC49 90%);
 
     position: absolute;
-    top: 1350px;
+    top: 1450px;
     left: 93%;
     transform: translate(-50%, -50%);
 }
@@ -53,8 +53,7 @@
     border-radius: 50%;
     background-color: skyblue;
     
-    z-index: 1;
-    box-shadow: 5px 5px 20px;
+    
 
     position: absolute;
     top: 300%;  
@@ -259,10 +258,10 @@
     width: 230px;
     height: 230px;
     border-radius: 50%;
-    background-image: linear-gradient(200deg, #8DC7F5 5%,#4A6BB2 25%, #1D2947 90%);
+    background-image: linear-gradient(200deg, rgb(123, 231, 255) 14%, rgb(50, 144, 255) 30%, rgba(0, 33, 65) 90%);
 
     position: absolute;
-    top: 275%;
+    top: 268%;
     left: 60%;
     transform: translate(-50%, -50%);
 
@@ -273,7 +272,7 @@
     width: 480px;
     height: 480px;
     border-radius: 50%;
-    background-image: linear-gradient(200deg, #8DC7F5 5%,#4A6BB2 25%, #1D2947 90%);
+    background-image: linear-gradient(220deg, rgb(156, 221, 255) 10%, rgb(72, 175, 228) 32%, rgba(0, 51, 77, 0.51) 88%);
 
     position: absolute;
     top: 310%;
@@ -285,11 +284,12 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: linear-gradient(200deg, #85C7FF 5%,#83C4FF 25%, #1F2E48 90%);
-
+    background-image: linear-gradient(200deg, rgb(123, 231, 255) 14%, rgb(50, 144, 255) 30%, rgb(0, 39, 77) 92%);
+    z-index: 1;
+    box-shadow: 2px 2px 5px;
     position: absolute;
-    top: 310%;
-    left: 25%;
+    top: 314%;
+    left: 26%;
     transform: translate(-50%, -50%);
 }
 

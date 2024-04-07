@@ -45,7 +45,7 @@ function counting(element, value, unit) {
         i = i + 1;
         delay = delay * 10;
         if (i >= value) {
-          clearInterval(timer); //정지
+            clearInterval(timer); //정지
         }
     }, delay);
 }
@@ -58,11 +58,11 @@ function countingHeight(element, value, unit) {
     const timer = setInterval(function() {
         const elapsed = performance.now() - start;
         j = easeOut(elapsed, value, timeDelay+200);
-        element.style.height = Math.round(j+1) + unit; //반올림 + 단위
+        element.style.height = Math.round(j+1) + unit; 
         j = j + 1;
         delay = delay * 10;
         if (j >= value) {
-          clearInterval(timer); //정지
+            clearInterval(timer); 
         }
     }, delay);
     j = 0;
@@ -76,11 +76,11 @@ function countingOpacity(element, value, unit) {
     const timerOpacity = setInterval(function() {
         const elapsed = performance.now() - start;
         k = easeOut(elapsed, value, 200);
-        element.style.opacity = Math.round(k) + unit; //반올림 + 단위
+        element.style.opacity = Math.round(k) + unit;
         k = k + 1;
         delay = delay * 10;
         if (k >= value) {
-          clearInterval(timerOpacity); //정지
+            clearInterval(timerOpacity);
         }
     }, delay);
     k = 0;
