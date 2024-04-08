@@ -234,7 +234,6 @@
     left: 31.2px;
     top: 54.8px;
     position: absolute;
-    
 }
 
 #small-color-circle2 {
@@ -378,7 +377,7 @@
     background-image: linear-gradient(180deg,#ffffff00 0%, #0f092137 10% ,#0f0921d8 30%, #0f0921 90%);
     height: 180px;
 
-    top: 300px;
+    top: 100px;
     position: absolute;
     transition: height 0.3 ease;
     z-index: -1;
@@ -401,4 +400,149 @@
     top: 320px;
     position: absolute;
     z-index: -2;
+}
+
+#team-container{
+    display: flex;
+    position: absolute;
+
+    top: 2200px;
+
+    height: 1000px;
+    width: 100vw;
+    border: 1px solid lime;
+
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    top: 3500px;
+}
+
+#team-won-so-gae {
+    color: white;
+    height: 600px;
+    font-size: 30px;
+    font-weight: 700;
+    top: 0%;
+    position: absolute;
+}
+
+#first-line {
+    width: 100vw;
+    height: 400px;
+    top: 100px;
+    position: absolute;
+    border: 1px solid orange;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#second-line {
+    width: 100vw;
+    height: 400px;
+    top: 550px;
+    position: absolute;
+    border: 1px solid orange;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.chapter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    border: 1px dotted cyan;
+}
+
+#devops{
+    left: 80px;
+}
+
+#operating {
+
+}
+
+#design {
+    right: 80px;
+}
+
+#frontend {
+    left: 225px;
+}
+#backend {
+    right: 225px;
+}
+
+.title {
+    top: 20px;
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid magenta;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    top: 70px;
+    width: 450px;
+    height: 70px;
+    position: absolute;
+    text-align: center;
+    border: 1px solid magenta;
+}
+
+.profile-container {
+    top: 180px;
+    width: 400px;
+    height: 120px;
+    position: absolute;
+    border: 1px solid yellow;
+}
+
+.line{
+    background-color: white;
+    top: 65px;
+    height: 0.5px;
+    position: absolute;
+}
+
+#line5 {
+    width: 200px;
+}
+
+#line6{
+    width: 190px;
+}
+
+#line7{
+    width: 170px;
+}
+
+#line8{
+    width: 200px;
+}
+
+#line9{
+    width: 180px;
+}
+
+#line10{
+    top: 150px;
+    position: absolute;
+    width: 60px;
 }

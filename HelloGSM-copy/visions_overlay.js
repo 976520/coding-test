@@ -33,5 +33,6 @@ function down(event) {
     var height = maxHeight - ((clientY - container.getBoundingClientRect().top) / containerHeight * maxHeight);
 
     downCover.style.height = height + 'px';
-    downCover.style.top = 900 - height + 'px';
+    downCover.style.top = 700 - height + 'px';
 }
+

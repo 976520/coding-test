@@ -249,7 +249,7 @@
     bottom: 75px;
     z-index: -1;
     border-radius: 10px;
-    background-color: #7CBBF9;
+    background-image:  linear-gradient(#7CBBF9 100%, white 10%);
     animation-timing-function: ease-in-out;
 
     position: absolute;
@@ -339,7 +339,6 @@
     position: absolute;
     top: 250%;
     right: 5%;
-
     z-index: -1;
 }
 
@@ -350,7 +349,7 @@
     background-color: #C4C4C4;
 
     position: absolute;
-    bottom: 54px;
+    bottom: 55px;
 }
 
 #nav-dot {

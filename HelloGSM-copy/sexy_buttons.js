@@ -8,12 +8,10 @@ const fifthButton = document.getElementById('fifth-button');
 
 function chunChunHeeGamSo(sexyButton){
     sexyButton.style.opacity = 0.6;
-    
 }
 
 function bbaLuGaeJungGa(sexyButton){
     sexyButton.style.opacity = 1;
-    
 }
 
 function catchMouseOver(event) {
