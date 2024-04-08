@@ -25,12 +25,15 @@ function up(event) {
 }
 
 function down(event) {
-    var offsetY = event.offsetY; // 마우스의 Y 위치(offsetY)
-    var maxHeight = 300; // 최대 높이 (조절 가능)
+    var offsetY = event.offsetY;
+    var maxHeight = 300; // 최대 높이
+    var elementBottom = downCover.getBoundingClientRect().bottom;
 
     if (event.target === container) {
     var height = maxHeight - (offsetY / container.clientHeight * maxHeight);
-    
+
     downCover.style.height = height + 'px';
+
+    downCover.style.bottom = (elementBottom - height) + 'px';
     }
 }
