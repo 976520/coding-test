@@ -358,43 +358,47 @@
 
 #cover-container {
     display: flex;
-    top: 1250px;
+    top: 1150px;
     left: -50px;
-    height: 500px;
+    height: 700px;
     width: 100vw;
-    border: 1px solid lime;
+
     position: relative;
 }
 
 #up{
-    background-image: linear-gradient(360deg, #0f092137 10% ,#0f0921ea 90%);
+    background-image: linear-gradient(360deg, #ffffff00 0%,#0f092137 10% ,#0f0921d8 30%, #0f0921 90%);
     height: 180px;
     top: 0px;
-    border: 1px solid lime;
-    transition: height ease;
+    transition: height 0.3 ease;
+    z-index: -1;
 }
 
 #down {
-    background-image: linear-gradient(180deg, #0f092137 10% ,#0f0921ea 90%);
+    background-image: linear-gradient(180deg,#ffffff00 0%, #0f092137 10% ,#0f0921d8 30%, #0f0921 90%);
     height: 180px;
-    border: 1px solid orange;
+
     top: 300px;
     position: absolute;
-    transition: height ease;
+    transition: height 0.3 ease;
+    z-index: -1;
 }
 
 #sa-young-ja {
     top: -20px;
     position: absolute;
+    z-index: -2;
 }
 
 #needs {
     top: 150px;
     left: 280px;
     position: absolute;
+    z-index: -2;
 }
 
 #jeo-hei{
     top: 320px;
     position: absolute;
+    z-index: -2;
 }

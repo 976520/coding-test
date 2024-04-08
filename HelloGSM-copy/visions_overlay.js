@@ -7,33 +7,31 @@ const jeoHei = document.createElement('jeo-hei');
 
 const container = document.getElementById('cover-container');
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.addEventListener('mousemove', up);
-});
-document.addEventListener('DOMContentLoaded', function() {
-    document.addEventListener('mousemove', down);
-});
+
+window.addEventListener('mousemove', up);
+window.addEventListener('scroll', up);
+window.addEventListener('wheel', up);
+window.addEventListener('mousemove', down);
+window.addEventListener('scroll', down);
+window.addEventListener('wheel', down);
+
 
 function up(event) {
-    var offsetY = event.offsetY;
-    var maxHeight = 300;
+    var clientY = event.clientY;
+    var containerHeight = upCover.parentElement.clientHeight;
+    var maxHeight = 700;
 
-    if (event.target === container) {
-    var height = offsetY / upCover.parentElement.clientHeight * maxHeight;
+    var height = (clientY - upCover.parentElement.getBoundingClientRect().top) / containerHeight * maxHeight;
     upCover.style.height = height + 'px';
-    }
 }
 
 function down(event) {
-    var offsetY = event.offsetY;
-    var maxHeight = 300; // 최대 높이
-    var elementBottom = downCover.getBoundingClientRect().bottom;
+    var clientY = event.clientY;
+    var containerHeight = container.clientHeight;
+    var maxHeight = 700;
 
-    if (event.target === container) {
-    var height = maxHeight - (offsetY / container.clientHeight * maxHeight);
+    var height = maxHeight - ((clientY - container.getBoundingClientRect().top) / containerHeight * maxHeight);
 
     downCover.style.height = height + 'px';
-
-    downCover.style.bottom = (elementBottom - height) + 'px';
-    }
+    downCover.style.top = 900 - height + 'px';
 }
