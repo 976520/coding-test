@@ -29,7 +29,7 @@ let lastClickTime = 0;
 const index = 0;
 selectedGraph(index);
 
-function easeOut(t, c, d) { //easeOutCirc 공식에 대입
+function easeOut(t, c, d) { //easeOutCirc 공식
     return c * Math.sqrt(1 - (t = t / d - 1) * t);
 }
 
