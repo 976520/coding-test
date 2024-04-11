@@ -594,7 +594,15 @@ footer {
 #devops .profile-container {
     width: 250px;
     display: flex;
-    justify-self: space-between;
+    justify-content: space-between;
 }
 
 
+.profile {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lime;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
