@@ -111,10 +111,10 @@ footer {
 
     left: 0%;
 
-    padding-left: 650px;
+    padding-left: 700px;
     padding-bottom: 100px;
     padding-top: 50px;
-    padding-right: 270px;
+    padding-right: 200px;
     background-color: #0F1B2E;
 
     text-align: right;
@@ -175,3 +175,22 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
+#channel-talk-sticky {
+    z-index: 2;
+    height: 2530px;
+
+    width: 60px;
+    right: 22px;
+    position: absolute;
+}
+
+#channel-talk-container {
+    position: sticky;
+    top: 610px;
+    right: 100px;
+
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    border: 1px solid cyan;
+}

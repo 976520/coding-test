@@ -94,3 +94,7 @@ body {
     font-size: 20px;
     color: white;
 }
+
+#channel-talk-sticky {
+    height: 1550px;
+}

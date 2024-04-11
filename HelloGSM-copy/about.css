@@ -627,7 +627,10 @@ footer {
     background-image: linear-gradient(200deg, rgb(123, 231, 255) 14%, rgb(50, 144, 255) 30%, rgba(0, 33, 65) 90%);
 
     position: absolute;
-
     top: 1960px;
     right: -220px;
+}
+
+#channel-talk-sticky {
+    height: 3800px;
 }
