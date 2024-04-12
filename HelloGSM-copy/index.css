@@ -189,8 +189,19 @@ footer {
     top: 610px;
     right: 100px;
 
-    height: 60px;
-    width: 60px;
-    border-radius: 20px;
-    border: 1px solid cyan;
+    height: 55px;
+    width: 55px;
+    border-radius: 23px;
+    background-color: #496AD0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sexy-white-mass {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
