@@ -6,83 +6,105 @@ body{
 header{
     width: 92vw;
     left: 80px;
+    top: 20px;
+    padding-left: 30px;
+    
     position: relative;
+}
+
+nav {
+    left:0;
+    top: 0;
+    background-color: #17161E;
+    width: 75px;
+    height: 100vh;
+    position: absolute;
 }
 
 #wrapper {
     display: flex;
     position: absolute;
-    border: 1px solid yellow;
-    left: 80px;
+    left: 95px;
     justify-content: space-around;
     align-items: center;
     height: 85vh;
-    width: 70vw;
+    width: 69vw;
 }
 
 #wrapper2 {
     display: flex;
     position: absolute;
-    border: 1px solid yellow;
     left: 1156px;
     justify-content: space-around;
     align-items: center;
     height: 85vh;
-    width: 22vw;
+    width: 23vw;
 }
 
 #clock-container {
     top: 20px;
     left: 20px;
     position: absolute;
-    border: 1px solid lime;
-    
-    height: 170px;
-    width: 1033px;
+    border-radius: 15px;
+    height: 155px;
+    width: 950px;
+    padding-left: 80px;
+    padding-top: 15px;
+    background-image: radial-gradient(198% 2092% at 17% 10%, rgb(89, 102, 233) 0%, rgb(159, 91, 247) 42%, rgb(201, 85, 255) 94%, rgb(242, 181, 181) 100%);;
+}
+
+#clock-container h1 {
+    font-size: 22px;
+    font-weight: 600;
 }
 
 #gong-ji-sa-hang{
     top: 210px;
     left: 20px;
     position: absolute;
-    border: 1px solid lime;
-    
+    border-radius: 15px;
     height: 360px;
     width: 30vw;
+    background-color: #17161E;
 }
 
 #ja-sup-sin-chung{
     top: 210px;
-    border: 1px solid lime;
-    right: 20px;
+    right: 10px;
     position: absolute;
     height: 170px;
     width: 550px;
+    border-radius: 15px;
+    background-color: #17161E;
 }
 
 #an-ma-eui-ja{
     top: 400px;
-    border: 1px solid lime;
-    right: 20px;
+    right: 10px;
     position: absolute;
     height: 170px;
     width: 550px;
+    border-radius: 15px;
+    background-color: #17161E;
 }
 
 #profile-container{
     top: 20px;
-    border: 1px solid lime;
     right: 20px;
     position: absolute;
     height: 90px;
-    width: 300px;
+    width: 320px;
+    border-radius: 15px;
+    background-color: #17161E;
 }
 
 #bab-container{
     top: 130px;
-    border: 1px solid lime;
     right: 20px;
     position: absolute;
     height: 440px;
-    width: 300px;
+    width: 320px;
+    border-radius: 15px;
+    background-color: #17161E;
 }
+
