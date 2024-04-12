@@ -1,0 +1,88 @@
+body{
+    background-color: #1F1E2A;
+    color: white;
+}
+
+header{
+    width: 92vw;
+    left: 80px;
+    position: relative;
+}
+
+#wrapper {
+    display: flex;
+    position: absolute;
+    border: 1px solid yellow;
+    left: 80px;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+    width: 70vw;
+}
+
+#wrapper2 {
+    display: flex;
+    position: absolute;
+    border: 1px solid yellow;
+    left: 1156px;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+    width: 22vw;
+}
+
+#clock-container {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    border: 1px solid lime;
+    
+    height: 170px;
+    width: 1033px;
+}
+
+#gong-ji-sa-hang{
+    top: 210px;
+    left: 20px;
+    position: absolute;
+    border: 1px solid lime;
+    
+    height: 360px;
+    width: 30vw;
+}
+
+#ja-sup-sin-chung{
+    top: 210px;
+    border: 1px solid lime;
+    right: 20px;
+    position: absolute;
+    height: 170px;
+    width: 550px;
+}
+
+#an-ma-eui-ja{
+    top: 400px;
+    border: 1px solid lime;
+    right: 20px;
+    position: absolute;
+    height: 170px;
+    width: 550px;
+}
+
+#profile-container{
+    top: 20px;
+    border: 1px solid lime;
+    right: 20px;
+    position: absolute;
+    height: 90px;
+    width: 300px;
+}
+
+#bab-container{
+    top: 130px;
+    border: 1px solid lime;
+    right: 20px;
+    position: absolute;
+    height: 440px;
+    width: 300px;
+}
