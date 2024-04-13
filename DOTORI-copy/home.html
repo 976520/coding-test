@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOTORI | 홈페이지</title>    
     <link rel="stylesheet" href="home.css">
+    <script src="index.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
 </head>
 <body>
     <header>
         <h1>홈</h1>
-        <div id ="date"></div>
+        <div id="date-container"></div>
     </header>
 
     <nav>
 
     </nav>
 
-    <div id ="wrapper">
+    <div id="wrapper">
+
         <div id="clock-container">
             <h1>현재시간</h1>
+            <div id="root"></div>
+            <img src="img/Dotori3DDark.png">
         </div>
 
         <div id="gong-ji-sa-hang"></div>
@@ -28,11 +37,38 @@
         <div id="an-ma-eui-ja"></div>
 
     </div>
-    
-    <div id = "wrapper2">
-        <div id="profile-container"></div>
 
+    <div id="wrapper2">
+        <div id="profile-container"></div>
         <div id="bab-container"></div>
     </div>
+
+    <!-- JSX 변환 및 React 컴포넌트 로드 -->
+    <script type="text/babel">
+        function Clock() {
+            const [clock, setClock] = React.useState(new Date());
+
+            React.useEffect(() => {
+                const timerID = setInterval(() => tick(), 1000);
+                return function cleanup() {
+                    clearInterval(timerID);
+                };
+            });
+
+            function tick() {
+                setClock(new Date());
+            }
+
+            return (
+                <div id="clock-text">
+                    <h1>{clock.toLocaleTimeString()}</h1>
+                </div>
+            );
+        }
+
+        const rootElement = document.getElementById("root");
+        ReactDOM.render(<Clock />, rootElement);
+
+    </script>
 </body>
 </html>

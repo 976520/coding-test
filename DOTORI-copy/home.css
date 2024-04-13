@@ -50,6 +50,7 @@ nav {
     width: 950px;
     padding-left: 80px;
     padding-top: 15px;
+    display: flex;
     background-image: radial-gradient(198% 2092% at 17% 10%, rgb(89, 102, 233) 0%, rgb(159, 91, 247) 42%, rgb(201, 85, 255) 94%, rgb(242, 181, 181) 100%);;
 }
 
@@ -108,3 +109,29 @@ nav {
     background-color: #17161E;
 }
 
+#date-container {
+    background-color: #17161E;
+    color: white;
+    top:10px;
+    left: 80px;
+    height: 25px;
+    width: 140px;
+    position: absolute;
+
+    border-radius: 5px;
+}
+
+#clock-text h1 {
+    position: absolute;
+    font-size: 64px;
+    font-weight: 800;
+    left: 70px;
+}
+
+#clock-container img {
+    z-index: 2;
+    position: absolute;
+    right: 10px;
+    top: -100px;
+    height: 250px;
+}
