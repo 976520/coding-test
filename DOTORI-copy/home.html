@@ -37,37 +37,13 @@
 
     </div>
 
-    <div id="wrapper2">
         <div id="profile-container"></div>
         <div id="bab-container"></div>
     </div>
 
     <!-- JSX 변환 및 React 컴포넌트 로드 -->
-    <script type="text/babel">
-        function Clock() {
-            const [clock, setClock] = React.useState(new Date());
-
-            React.useEffect(() => {
-                const timerID = setInterval(() => tick(), 1000);
-                return function cleanup() {
-                    clearInterval(timerID);
-                };
-            });
-
-            function tick() {
-                setClock(new Date());
-            }
-
-            return (
-                <div id="clock-text">
-                    <h1>{clock.toLocaleTimeString()}</h1>
-                </div>
-            );
-        }
-
-        const rootElement = document.getElementById("root");
-        ReactDOM.render(<Clock />, rootElement);
-
+    <script type="text/babel" src="clock.jsx">
+        
     </script>
 </body>
 </html>
