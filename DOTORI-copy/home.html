@@ -14,8 +14,10 @@
 </head>
 <body>
     <header>
-        <h1>홈</h1>
-        <div id="date-container"></div>
+        <h1 class="hu-ri-mung-tung-color">홈</h1>
+        <div id="date-container">
+            <div id="root-date"></div>
+        </div>
     </header>
 
     <nav>
@@ -26,14 +28,20 @@
 
         <div id="clock-container">
             <h1>현재시간</h1>
-            <div id="root"></div>
+            <div id="root-clock"></div>
             <img src="img/Dotori3DDark.png">
         </div>
-        <div id="gong-ji-sa-hang"></div>
+        <div id="gong-ji-sa-hang">
+            <h2>공지사항</h2>
+        </div>
 
-        <div id="ja-sup-sin-chung"></div>
+        <div id="ja-sup-sin-chung">
+            <h2>자습신청</h2>
+        </div>
 
-        <div id="an-ma-eui-ja"></div>
+        <div id="an-ma-eui-ja">
+            <h2>안마의자</h2>
+        </div>
 
     </div>
 
@@ -42,9 +50,7 @@
         <div id="bab-container"></div>
     </div>
 
-    <!-- JSX 변환 및 React 컴포넌트 로드 -->
-    <script type="text/babel" src="clock.jsx">
-        
-    </script>
+    <script type="text/babel" src="clock.jsx"></script>
+    <script type="text/babel" src="date.jsx"></script>
 </body>
 </html>

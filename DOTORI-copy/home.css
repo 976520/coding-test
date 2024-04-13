@@ -1,8 +1,13 @@
 body{
     background-color: #1F1E2A;
     color: white;
+    font-family:'SUIT';;
 }
 
+p {
+    color: white;
+    font-family:'SUIT-Regular';
+}
 header{
     width: 92vw;
     left: 80px;
@@ -12,11 +17,15 @@ header{
     position: relative;
 }
 
+.hu-ri-mung-tung-color {
+    color:rgb(205, 205, 213);
+}
+
 nav {
     left:0;
     top: 0;
     background-color: #17161E;
-    width: 75px;
+    width: 70px;
     height: 100vh;
     position: absolute;
 }
@@ -69,6 +78,15 @@ nav {
     background-color: #17161E;
 }
 
+#gong-ji-sa-hang h2, #ja-sup-sin-chung h2, #an-ma-eui-ja h2{
+    left: 25px;
+    top: 5px;
+    position: absolute;
+    font-size: 17px;
+    font-weight: 700;
+    color:rgb(205, 205, 213);
+}
+
 #ja-sup-sin-chung{
     top: 210px;
     right: 10px;
@@ -117,8 +135,17 @@ nav {
     height: 25px;
     width: 140px;
     position: absolute;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
+}
+
+#date-text h2{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    color: rgb(129, 129, 152);
 }
 
 #clock-text h1 {
