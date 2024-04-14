@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOTORI | 홈페이지</title>    
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -19,8 +20,31 @@
             <div id="root-date"></div>
         </div>
     </header>
-    <nav>
 
+    <nav>
+        <div id="nav-container">
+            <a id="dotori-logo-nav">
+                <img src="../svg/dotori-logo-nav.svg">
+            </a>
+            <a id="home-nav" class="button-nav">
+                <img src="../svg/home-selected.svg">
+            </a>
+            <a id="notice-nav"href="notice.html"class="button-nav">
+                <img src="../svg/notice.svg">
+            </a>
+            <a id="selfstudy-nav"href="selfstudy.html"class="button-nav">
+                <img src="../svg/selfstudy.svg">
+            </a>
+            <a id="massage-nav"href="massage.html"class="button-nav">
+                <img src="../svg/massage.svg">
+            </a>
+            <a id="song-nav"href="song.html"class="button-nav">
+                <img src="../svg/song.svg">
+            </a>
+        </div>
+        <a id="log-out">
+            <img src="../svg/logout.svg">
+        </a>
     </nav>
 
     <div id="wrapper">
@@ -34,22 +58,34 @@
             <h2>공지사항</h2>
         </div>
 
-        <div id="ja-sup-sin-chung">
+        <div id="ja-sup-sin-chung" class="sin-chung-container">
             <h2>자습신청</h2>
+            <a class="all-see"href="selfstudy.html">전체보기 ></a>
+            <div id="root-ja-sup"></div>
+            <p class="sul-myung">오후 8시~9시에 자습 신청이 가능해요</p>
         </div>
 
-        <div id="an-ma-eui-ja">
+        <div id="an-ma-eui-ja" class="sin-chung-container">
             <h2>안마의자</h2>
+            <a class="all-see"href="massage.html">전체보기 ></a>
+            <div id="root-an-ma"></div>
+            <p class="sul-myung">오후 8시20분~9시에 안마의자 신청이 가능해요<span><br>※ 여학생의 경우 여자 사감선생님께 별도로 신청해주세요.</span></span></p>
         </div>
 
     </div>
 
     <div id="wrapper2"  >
         <div id="profile-container"></div>
-        <div id="bab-container"></div>
+        <div id="bab-container">
+            <h2>급식</h2>
+            <div id="sik-selector-background"></div>
+            <div id="bab-list-background"></div>
+        </div>
     </div>
 
     <script type="text/babel" src="clock.jsx"></script>
     <script type="text/babel" src="date.jsx"></script>
+    <script type="text/babel" src="ja-sup-sin-chung.jsx"></script>
+    <script type="text/babel" src="an-ma-eui-ja.jsx"></script>
 </body>
 </html>

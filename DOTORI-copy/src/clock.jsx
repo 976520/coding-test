@@ -1,4 +1,4 @@
-//clock.jsx
+const clockRootElement = document.getElementById("root-clock");
 
 function Clock() {
     const [clock, setClock] = React.useState(new Date());
@@ -18,5 +18,4 @@ function Clock() {
     );
 }
 
-const clockRootElement = document.getElementById("root-clock");
 ReactDOM.render(<Clock />, clockRootElement);

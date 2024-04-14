@@ -1,35 +1,3 @@
-body{
-    background-color: #1F1E2A;
-    color: white;
-    font-family:'SUIT';;
-}
-
-p {
-    color: white;
-    font-family:'SUIT-Regular';
-}
-header{
-    width: 92vw;
-    left: 80px;
-    top: 20px;
-    padding-left: 30px;
-    
-    position: relative;
-}
-
-.hu-ri-mung-tung-color {
-    color:rgb(205, 205, 213);
-}
-
-nav {
-    left:0;
-    top: 0;
-    background-color: #17161E;
-    width: 70px;
-    height: 100vh;
-    position: absolute;
-}
-
 #wrapper {
     display: flex;
     position: absolute;
@@ -66,8 +34,8 @@ nav {
 #clock-container h1 {
     font-size: 22px;
     font-weight: 600;
+    letter-spacing: -1px;
 }
-
 
 
 #gong-ji-sa-hang{
@@ -80,13 +48,14 @@ nav {
     background-color: #17161E;
 }
 
-#gong-ji-sa-hang h2, #ja-sup-sin-chung h2, #an-ma-eui-ja h2{
+#gong-ji-sa-hang h2, #ja-sup-sin-chung h2, #an-ma-eui-ja h2, #bab-container h2{
     left: 25px;
     top: 5px;
     position: absolute;
     font-size: 17px;
     font-weight: 700;
     color:rgb(205, 205, 213);
+    letter-spacing: -1px;
 }
 
 #ja-sup-sin-chung{
@@ -111,22 +80,46 @@ nav {
 
 #profile-container{
     top: 20px;
-    right: 20px;
+    right: 15px;
     position: absolute;
     height: 90px;
-    width: 320px;
+    width: 330px;
     border-radius: 15px;
     background-color: #17161E;
 }
 
 #bab-container{
     top: 130px;
-    right: 20px;
+    right: 15px;
     position: absolute;
-    height: 440px;
-    width: 320px;
+    height: 300px;
+    width: 330px;
     border-radius: 15px;
     background-color: #17161E;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+
+
+#bab-list-background {
+    background-color: #1E1E25;
+    width: 290px;
+    height: 320px;
+    
+    border-radius: 10px;
+    top: 100px;
+    position: absolute;
+}
+
+#sik-selector-background{
+    background-color: #1E1E25;
+    width: 290px;
+    height: 30px;
+    
+    border-radius: 10px;
+    top: 55px;
+    position: absolute;
 }
 
 #date-container {
@@ -164,4 +157,89 @@ nav {
     right: 10px;
     top: -100px;
     height: 250px;
+}
+
+
+
+.sin-chung-people {
+    font-size: 44px;
+    font-weight: 700;
+
+    position: absolute;
+    color:rgb(205, 205, 213);
+}
+
+.sin-chung-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#an-ma-button, #ja-sup-button {
+    height: 28px;
+    width: 90px;
+    border-radius: 7px;
+
+    position: absolute;
+    top: 18vh;
+    right: 23px;
+
+    font-size: 14px;
+    font-weight: 500;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#ja-sup-people-container, #an-ma-people-container {
+    display: flex;
+    text-align: center;
+    width: 550px;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.sul-myung {
+    position: absolute;
+    left: 24px;
+    bottom: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color:rgb(129, 129, 152);
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.sul-myung span {
+color: rgb(89, 102, 233)
+}
+
+#ja-sup-gauge, #an-ma-gauge{
+    background-color: #1E1E25;
+    position: absolute;
+    top: 5.5vh;
+
+    border-radius: 5px;
+    height: 18px;
+    width: 500px;
+}
+
+.all-see {
+    position: absolute;
+    font-size: 13px;
+    color: rgb(129, 129, 152);
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    right: 22px;
+    top:20px;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+#home-nav{
+    background-color: #1F2134;
 }

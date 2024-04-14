@@ -1,0 +1,87 @@
+body{
+    background-color: #1F1E2A;
+    color: white;
+    font-family:'SUIT';;
+}
+
+p {
+    color: white;
+    font-family:'SUIT';
+}
+
+header{
+    width: 92vw;
+    left: 80px;
+    top: 20px;
+    padding-left: 30px;
+    color:rgb(205, 205, 213);
+    position: relative;
+}
+
+nav {
+    left:0;
+    top: 0;
+    background-color: #17161E;
+    width: 70px;
+    height: 100vh;
+    position: absolute;
+}
+
+
+#nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 53vh;
+    flex-direction: column;
+    padding-bottom: 6vh;
+    padding-top: 4vh;
+}
+
+#dotori-logo-nav{
+    height: 10vh;
+    width: 65px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dotori-logo-nav img {
+    height: 5.5vh;
+}
+
+.button-nav, #log-out{
+    height: 7vh;
+    width: 65px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-nav img, #log-out img {
+    height: 3.7vh;
+}
+
+@keyframes colorChange {
+    from{background-color: none;}
+    to{background-color: #1F1E2A;}
+}
+
+#nav-container :hover {
+    animation-name: colorChange;
+    animation-timing-function: ease;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+#log-out {
+    height: 7vh;
+    width: 65px;
+    border-radius: 15px;
+    bottom: 5vh;
+    position:absolute;
+}
+
