@@ -4,10 +4,12 @@ let background = '#6568E0'
     function App() {
         const data = React.useState(0);
         const [counter, modifier] = data
-
+        let anMaGauge = (counter/5)*500;
+        let anMaRadius = "5px 0px 0px 5px";
         if (counter == 5) {
             anMaSinChung = "신청불가";
             background = "#282A59"
+            anMaRadius = '5px 5px 5px 5px';
         }
 
         const onClick = () => {
@@ -20,7 +22,9 @@ let background = '#6568E0'
             <div>
                 <div id="an-ma-people-container">
                     <div className="sin-chung-people">{counter}/5</div>
-                    <div id="an-ma-gauge"></div>
+                    <div id="an-ma-gauge-background">
+                        <div id="an-ma-gauge" style={{width: anMaGauge, borderRadius: anMaRadius}}></div>
+                    </div>
                 </div>
 
                 <div id="an-ma-button" style={{background: background}} onClick={onClick}>{anMaSinChung}</div>

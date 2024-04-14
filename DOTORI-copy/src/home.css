@@ -218,15 +218,6 @@
 color: rgb(89, 102, 233)
 }
 
-#ja-sup-gauge, #an-ma-gauge{
-    background-color: #1E1E25;
-    position: absolute;
-    top: 5.5vh;
-
-    border-radius: 5px;
-    height: 18px;
-    width: 500px;
-}
 
 .all-see {
     position: absolute;
@@ -242,4 +233,22 @@ color: rgb(89, 102, 233)
 
 #home-nav{
     background-color: #1F2134;
+}
+#ja-sup-gauge-background, #an-ma-gauge-background{
+    background-color: #1E1E25;
+    position: absolute;
+    top: 5.5vh;
+    display: flex;
+    border-radius: 5px;
+    height: 18px;
+    width: 500px;
+}
+
+#an-ma-gauge, #ja-sup-gauge{
+    border: 1px solid lime;
+    position: absolute;
+    left: 0px;
+    height: 18px;
+    width: 30px;
+    border-radius: 5px 0px 0px 5px;
 }
