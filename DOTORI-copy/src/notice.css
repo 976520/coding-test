@@ -2,3 +2,33 @@
 #notice-nav{
     background-color: #1F2134;
 }
+
+#jun-che {
+    top: 140px;
+    left: 120px;
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+    background-color: #17161E;
+}
+
+#jun-che h1{
+    left: 25px;
+    top: 5px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(205, 205, 213);
+    letter-spacing: -1px;
+}
+
+#select-board {
+    top: 140px;
+    left: 550px;
+    position: absolute;
+    height: 500px;
+    width: 950px;
+    border-radius: 15px;
+    background-color: #17161E;
+}

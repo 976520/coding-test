@@ -245,10 +245,10 @@ color: rgb(89, 102, 233)
 }
 
 #an-ma-gauge, #ja-sup-gauge{
-    border: 1px solid lime;
     position: absolute;
     left: 0px;
     height: 18px;
     width: 30px;
     border-radius: 5px 0px 0px 5px;
 }
+

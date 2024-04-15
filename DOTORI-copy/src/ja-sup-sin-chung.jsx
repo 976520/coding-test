@@ -7,6 +7,10 @@ function App() {
         const [counter, modifier] = data
         let jaSupGauge = (counter/50)*500;
         let jaSupRadius = "5px 0px 0px 5px";
+        let jaSupGreen = 260 - (counter/50)*200;
+        let jaSupRed = (counter/50)*200;
+
+
         if (counter == 50) {
             jaSupSinChung = "신청불가";
             jaSupBorder = "#282A59"
@@ -25,7 +29,7 @@ function App() {
                 <div id="ja-sup-people-container">
                     <div className="sin-chung-people">{counter}/50</div>
                     <div id="ja-sup-gauge-background">
-                        <div id="ja-sup-gauge" style={{width: jaSupGauge, borderRadius: jaSupRadius}}></div>
+                        <div id="ja-sup-gauge" style={{width: jaSupGauge, borderRadius: jaSupRadius, backgroundColor: "rgb("+jaSupRed+","+jaSupGreen+",0)"}}></div>
                     </div>
                 </div>
                 

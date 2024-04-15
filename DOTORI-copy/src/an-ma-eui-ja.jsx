@@ -6,6 +6,8 @@ let background = '#6568E0'
         const [counter, modifier] = data
         let anMaGauge = (counter/5)*500;
         let anMaRadius = "5px 0px 0px 5px";
+        let anMaGreen = 260 - (counter/5)*200;
+        let anMaRed = (counter/5)*200;
         if (counter == 5) {
             anMaSinChung = "신청불가";
             background = "#282A59"
@@ -23,7 +25,7 @@ let background = '#6568E0'
                 <div id="an-ma-people-container">
                     <div className="sin-chung-people">{counter}/5</div>
                     <div id="an-ma-gauge-background">
-                        <div id="an-ma-gauge" style={{width: anMaGauge, borderRadius: anMaRadius}}></div>
+                        <div id="an-ma-gauge" style={{width: anMaGauge, borderRadius: anMaRadius, backgroundColor: "rgb("+anMaRed+","+anMaGreen+",0)"}}></div>
                     </div>
                 </div>
 
