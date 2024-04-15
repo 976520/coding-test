@@ -12,9 +12,9 @@ function App() {
 
         if (counter < 30) {
             backgroundColor = "#93CB7A";
-        } else if (30 <= counter < 40) {
+        } else if (30 <= counter && counter < 40) {
             backgroundColor = "#E2D861";
-        } else if (40 <= counter <= 50) {
+        } else if (40 <= counter && counter <= 50) {
             backgroundColor = "#D67E72";
         }
 
@@ -30,6 +30,8 @@ function App() {
             if(counter != 50) {
                 modifier((current)=> current + 1);
             }
+
+            
         };
 
         return(

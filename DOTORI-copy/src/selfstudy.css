@@ -2,3 +2,23 @@
 #selfstudy-nav{
     background-color: #1F2134;
 }
+
+#filter-container {
+    top: 100px;
+    right: 40px;
+    position: absolute;
+    height: 60vh;
+    width: 18vw;
+    border-radius: 15px;
+    background-color: #17161E;
+}
+
+#filter-container h2 {
+    left: 20px;
+    top: 5px;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+    color:rgb(205, 205, 213);
+    letter-spacing: -1px;
+}

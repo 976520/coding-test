@@ -12,9 +12,9 @@ let color = 'white';
 
         if (counter < 3) {
             backgroundColor = "#93CB7A";
-        } else if (3 <= counter < 4) {
+        } else if (3 <= counter && counter < 4) {
             backgroundColor = "#E2D861";
-        } else if (4 <= counter <= 5) {
+        } else if (4 <= counter && counter <= 5) {
             backgroundColor = "#D67E72";
         }
 

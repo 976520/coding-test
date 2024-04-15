@@ -14,7 +14,7 @@ function Sik() {
 
     return (
         <div>
-            <div id="sik-selector-background">
+            <div id="sik-selector-background"> 
                 <div id="sik-selector" style={{left:selectorLeft}}>{selectedMeal}</div>
                 <div id="breakfast-zone" onClick={() => selectMeal("조식")}>
                     조식
