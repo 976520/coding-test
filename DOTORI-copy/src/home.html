@@ -23,22 +23,22 @@
 
     <nav>
         <div id="nav-container">
-            <a id="dotori-logo-nav">
+            <a id="dotori-logo-nav" onclick="location.replace('home.html')">
                 <img src="../svg/dotori-logo-nav.svg">
             </a>
-            <a id="home-nav" class="button-nav">
+            <a id="home-nav" onclick="location.replace('home.html')" class="button-nav">
                 <img src="../svg/home-selected.svg">
-            </a>
-            <a id="notice-nav"href="notice.html"class="button-nav">
+            </a>    
+            <a id="notice-nav" onclick="location.replace('notice.html')" class="button-nav">
                 <img src="../svg/notice.svg">
             </a>
-            <a id="selfstudy-nav"href="selfstudy.html"class="button-nav">
+            <a id="selfstudy-nav" onclick="location.replace('selfstudy.html')"class="button-nav">
                 <img src="../svg/selfstudy.svg">
             </a>
-            <a id="massage-nav"href="massage.html"class="button-nav">
+            <a id="massage-nav" onclick="location.replace('massage.html')"class="button-nav">
                 <img src="../svg/massage.svg">
             </a>
-            <a id="song-nav"href="song.html"class="button-nav">
+            <a id="song-nav" onclick="location.replace('song.html')"class="button-nav">
                 <img src="../svg/song.svg">
             </a>
         </div>
@@ -78,7 +78,10 @@
         <div id="profile-container"></div>
         <div id="bab-container">
             <h2>급식</h2>
-            <div id="sik-selector-background"></div>
+
+                <div id="root-sik-selector">
+                </div>
+
             <div id="bab-list-background"></div>
         </div>
     </div>
@@ -87,5 +90,6 @@
     <script type="text/babel" src="date.jsx"></script>
     <script type="text/babel" src="ja-sup-sin-chung.jsx"></script>
     <script type="text/babel" src="an-ma-eui-ja.jsx"></script>
+    <script type="text/babel" src="sik-selector.jsx"></script>
 </body>
 </html>

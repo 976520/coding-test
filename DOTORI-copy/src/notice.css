@@ -5,7 +5,7 @@
 
 #jun-che {
     top: 140px;
-    left: 120px;
+    left: 115px;
     position: absolute;
     height: 500px;
     width: 400px;
@@ -14,7 +14,7 @@
 }
 
 #jun-che h1{
-    left: 25px;
+    left: 20px;
     top: 5px;
     position: absolute;
     font-size: 20px;
@@ -25,10 +25,37 @@
 
 #select-board {
     top: 140px;
-    left: 550px;
+    left: 540px;
     position: absolute;
     height: 500px;
     width: 950px;
     border-radius: 15px;
     background-color: #17161E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#select-board img {
+    top: 150px; 
+    position: absolute;
+}
+
+#select-board h1 {
+    position: absolute;
+    top: 265px;
+    font-size: 23px;
+    font-weight: 700;
+    color: rgb(205, 205, 213);
+    letter-spacing: -2px;
+}
+
+#select-board h2 {
+    position: absolute;
+    top: 310px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(129, 129, 152);
+    letter-spacing: -2px;
+}
+

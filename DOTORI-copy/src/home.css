@@ -98,15 +98,15 @@
     background-color: #17161E;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 140px;
 }
-
 
 #bab-list-background {
     background-color: #1E1E25;
     width: 290px;
     height: 320px;
-    
+
     border-radius: 10px;
     top: 100px;
     position: absolute;
@@ -115,11 +115,45 @@
 #sik-selector-background{
     background-color: #1E1E25;
     width: 290px;
-    height: 30px;
-    
+    height: 32px;
+    display: flex;
     border-radius: 10px;
+    left: 20px;
     top: 55px;
     position: absolute;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sik-selector{
+    background-color: #636272;
+    width: 90px;
+    height: 32px;
+    z-index: 2;
+    border-radius: 10px;
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease-out;
+    font-size:16px;
+    font-weight: 700;
+    color:rgb(205, 205, 213);
+    cursor: pointer;
+}
+
+#lunch-zone, #dinner-zone, #breakfast-zone {
+    z-index: 0;
+    width:90px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(98, 98, 116);
 }
 
 #date-container {
@@ -134,6 +168,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    
 }
 
 #date-text h2{
@@ -158,8 +193,6 @@
     top: -100px;
     height: 250px;
 }
-
-
 
 .sin-chung-people {
     font-size: 44px;
@@ -251,4 +284,3 @@ color: rgb(89, 102, 233)
     width: 30px;
     border-radius: 5px 0px 0px 5px;
 }
-
