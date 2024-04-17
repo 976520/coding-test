@@ -93,20 +93,37 @@
     border: 1px solid lime;
     top: 60px;
     left: 20px;
-    border-radius: 15px;
+    overflow: hidden;
     height: 66vh;
     width: 60vw;
 }
 
-#music {
+.music {
     border: 1px solid cyan;
     padding-top: 10px;
     padding-bottom: 10px;
-    height: 70px;
+    height: 65px;
     top: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
 }
 
-#thumbnail {
-    
+.thumbnail {
+    border: 1px solid yellow;
+    left: 10px;
+    height: 72px;
+    width: 128px;
+    position: absolute;
+}
+
+.delete-button{
+    border: 1px solid red;
+    background: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
 }
