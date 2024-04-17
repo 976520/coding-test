@@ -19,7 +19,6 @@ function App() {
     } else if (40 <= counter && counter <= 50) {
         backgroundColor = "#D67E72";
     }
-
     if (counter === 50) {
         jaSupSinChung = "신청불가";
         jaSupBorder = "#282A59";
