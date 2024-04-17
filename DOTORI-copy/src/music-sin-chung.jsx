@@ -48,7 +48,6 @@ function App() {
             const element = document.getElementById('music'+ n);
             tomato.remove(element);
             setNumber(number => number-1); 
-            
         }
     }
     
