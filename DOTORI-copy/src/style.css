@@ -16,6 +16,10 @@ header{
     padding-left: 30px;
     color:rgb(205, 205, 213);
     position: relative;
+    
+}
+header h1{
+    letter-spacing: -2px;
 }
 
 nav {
